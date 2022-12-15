@@ -11,13 +11,13 @@ const add = function(n)
 {const banana = (accumulator, currentValue) => {
   return accumulator + currentValue
 }
- return n.reduce(banana)
+ return [n.reduce(banana)]
 }
 const product = function(n)
 {const apple = (accumulator, currentValue) => {
   return accumulator * currentValue
 }
- return n.reduce(apple)
+ return [n.reduce(apple)]
 }
 const evens = function(nums)
 {return nums.filter(num=>num%2==0)
@@ -29,7 +29,7 @@ const min = function(n)
   }
   return accumulator
 }
- return n.reduce(coconut)
+ return [n.reduce(coconut)]
 }
 const max = function(n)
 {const durian = (accumulator, currentValue) => {
@@ -38,7 +38,7 @@ const max = function(n)
   }
   return accumulator
 }
- return n.reduce(durian)
+ return [n.reduce(durian)]
 }
 const sort = function(n,ascending){
   array = []
